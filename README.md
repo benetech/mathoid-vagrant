@@ -45,6 +45,12 @@ And get the response:
 }
 ```
 
+You can also test with MathML input:
+
+```
+curl -d 'q=<math><mrow><mi>E</mi><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup></mrow></math>&type=mml' localhost:10042 > /vagrant/test.out
+```
+
 ## Test: Browser
 
 Navigate to [http://localhost:10042/](http://localhost:10042/). You should see:
